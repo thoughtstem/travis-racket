@@ -9,6 +9,9 @@ else
     MIN=""
 fi
 
+#Overriding what's in .travis.yml with a global default.  TODO: Go remove it from all the various .travis.yml files -- annoying.
+RACKET_VERSION=7.4
+
 DL_BASE="https://www.cs.utah.edu/plt/installers"
 
 if [[ "$RACKET_VERSION" = "HEAD" ]]; then
